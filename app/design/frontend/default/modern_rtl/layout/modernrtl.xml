@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * CODNITIVE
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE_EULA.html.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.codnitive.com/en/terms-of-service-softwares/
+ * http://www.codnitive.com/fa/terms-of-service-softwares/
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade to newer
+ * versions in the future.
+ *
+ * @category   Codnitive
+ * @package    Codnitive_Modernrtl
+ * @author     Hassan Barza <support@codnitive.com>
+ * @copyright  Copyright (c) 2012 CODNITIVE Co. (http://www.codnitive.com)
+ * @license    http://www.codnitive.com/en/terms-of-service-softwares/ End User License Agreement (EULA 1.0)
+ */
+-->
+<layout version="0.1.0">
+    
+    <default translate="label" module="page">
+        <reference name="head">
+            <action method="addItem"><type>skin_css</type><name>css/styles-aie.css</name><params/><if>IE</if></action>
+            <action method="addItem"><type>skin_css</type><name>css/styles-ie9.css</name><params/><if>IE 9</if></action>
+		</reference>
+    </default>
+    
+    <sales_email_order_items>
+        <block type="sales/order_email_items" name="items" template="email/order/items.phtml">
+            <action method="addItemRender"><type>default</type><block>sales/order_email_items_order_default</block><template>email/order/items/order/default.phtml</template></action>
+            <action method="addItemRender"><type>grouped</type><block>sales/order_email_items_order_grouped</block><template>email/order/items/order/default.phtml</template></action>
+            <block type="sales/order_totals" name="order_totals" template="sales/order/totals.phtml">
+                <action method="setLabelProperties"><value>colspan="3" align="left" style="padding:3px 9px"</value></action>
+                <action method="setValueProperties"><value>align="right" style="padding:3px 9px"</value></action>
+                <block type="tax/sales_order_tax" name="tax" template="tax/order/tax.phtml">
+                    <action method="setIsPlaneMode"><value>1</value></action>
+                </block>
+            </block>
+        </block>
+        <block type="core/text_list" name="additional.product.info" />
+    </sales_email_order_items>
+
+    <sales_email_order_invoice_items>
+        <block type="sales/order_email_invoice_items" name="items" template="email/order/invoice/items.phtml">
+            <action method="addItemRender"><type>default</type><block>sales/order_email_items_default</block><template>email/order/items/invoice/default.phtml</template></action>
+            <action method="addItemRender"><type>grouped</type><block>sales/order_email_items_order_grouped</block><template>email/order/items/invoice/default.phtml</template></action>
+            <block type="sales/order_invoice_totals" name="invoice_totals" template="sales/order/totals.phtml">
+                <action method="setLabelProperties"><value>colspan="3" align="left" style="padding:3px 9px"</value></action>
+                <action method="setValueProperties"><value>align="right" style="padding:3px 9px"</value></action>
+                <block type="tax/sales_order_tax" name="tax" template="tax/order/tax.phtml"/>
+            </block>
+        </block>
+        <block type="core/text_list" name="additional.product.info" />
+    </sales_email_order_invoice_items>
+
+    <sales_email_order_creditmemo_items>
+        <block type="sales/order_email_creditmemo_items" name="items" template="email/order/creditmemo/items.phtml">
+            <action method="addItemRender"><type>default</type><block>sales/order_email_items_default</block><template>email/order/items/creditmemo/default.phtml</template></action>
+            <action method="addItemRender"><type>grouped</type><block>sales/order_email_items_order_grouped</block><template>email/order/items/creditmemo/default.phtml</template></action>
+            <block type="sales/order_creditmemo_totals" name="creditmemo_totals" template="sales/order/totals.phtml">
+                <action method="setLabelProperties"><value>colspan="3" align="left" style="padding:3px 9px"</value></action>
+                <action method="setValueProperties"><value>align="right" style="padding:3px 9px"</value></action>
+                <block type="tax/sales_order_tax" name="tax" template="tax/order/tax.phtml"/>
+            </block>
+        </block>
+        <block type="core/text_list" name="additional.product.info" />
+    </sales_email_order_creditmemo_items>
+</layout>

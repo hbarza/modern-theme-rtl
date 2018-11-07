@@ -1,0 +1,276 @@
+/**
+ * CODNITIVE
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE_EULA.html.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.codnitive.com/en/terms-of-service-softwares/
+ * http://www.codnitive.com/fa/terms-of-service-softwares/
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade to newer
+ * versions in the future.
+ *
+ * @category   Codnitive
+ * @package    Codnitive_Modernrtl
+ * @author     Hassan Barza <support@codnitive.com>
+ * @copyright  Copyright (c) 2012 CODNITIVE Co. (http://www.codnitive.com)
+ * @license    http://www.codnitive.com/en/terms-of-service-softwares/ End User License Agreement (EULA 1.0)
+ */
+
+/* IE 6 only */
+* html .validation-advice { height:13px; }
+* html .main { height:350px; }
+* html .account-login .content { height:200px; }
+.block li.item,
+.block-poll li,
+.opc li.section { vertical-align:top; }
+
+* html button.button span { background-image:url(../images/bkg_btn.gif); }
+* html .form-search button.button span,
+* html .block button.button span,
+* html .product-view .box-tags .form-add button.button span,
+* html .footer .form-subscribe button.button span { background-image:url(../images/bkg_btn-small.gif); }
+* html .window-overlay { background:#ccc; filter:alpha(opacity=50); }
+
+/* Doubled Margin Fixes */
+.product-view .product-img-box .more-views li,
+.product-view .box-tags .form-add .input-box,
+.sp-methods select.month,
+.footer .form-subscribe .input-box { display:inline; }
+
+/********** < Navigation styles */
+#nav li,
+#nav li a { zoom:1; }
+#nav li { vertical-align:top; }
+/********** < Navigation styles */
+
+select { margin-bottom:1px; }
+input.radio { width:13px; height:13px; }
+input.checkbox { width:13px; height:13px; }
+button.button { height:28px; }
+button.button span { position:relative; }
+button.btn-checkout { height:28px; }
+.form-list label { position:relative; z-index:0; }
+.form-list label.required em { position:absolute; top:0; /*right*/left:-8px; }
+.form-list .input-box input.input-text { float:/*left*/right; }
+
+.form-search button.button,
+.block button.button,
+.product-view .box-tags .form-add button.button,
+.footer .form-subscribe button.button { height:23px; }
+
+.cart .discount .buttons-set button.button,
+.cart .shipping .buttons-set button.button { height:19px; }
+
+table { scrollbar-face-color:expression(runtimeStyle.scrollbarFaceColor = '#fff', cellSpacing = 0); }
+
+.product-view .product-img-box .zoom.disabled { filter:alpha(opacity=30); }
+
+.gift-messages-form { position:relative; zoom:1; }
+
+.tool-tip .btn-close a { margin:0; }
+
+.product-view .box-tags .product-tags li { padding:/*0 4px 0 7px*/0 7px 0 4px; }
+/*.footer li { padding:0 4px; margin-left:*//*6px*//*0;  margin-right:4px; }*/
+
+.product-options dd .time-picker select { margin:0; padding:0; position:relative; top:-1px; }
+
+/* Clearer */
+.clearer { display:block; clear:both; font-size:0; line-height:0; height:0; overflow:hidden; }
+
+/* Clears and hasLayout fixes */
+.header-container,
+.header-container .top-container,
+.header,
+.top-bar,
+.quick-access,
+.form-search,
+#nav,
+.main,
+.footer,
+.footer .form-subscribe,
+.footer-container .bottom-container,
+.col-main,
+.col2-set,
+.col3-set,
+.col4-set,
+.messages li,
+.search-autocomplete li,
+.block,
+.block .block-content,
+.block .actions,
+.block li.item,
+.block-poll li,
+.block-poll .label,
+.block-layered-nav .currently li,
+.block-account .block-content li a,
+.mini-products-list .product-details,
+.page-title,
+.rss-title h1,
+.products-grid,
+.products-list li.item,
+.box-account .box-head,
+.dashboard .box .box-title,
+.order-info ul,
+.box-reviews li.item,
+.box-tags li.item,
+.pager,
+.sorter,
+.ratings,
+.add-to-box,
+.add-to-cart,
+.product-essential,
+.product-collateral,
+.product-tabs,
+.product-view .product-img-box .more-views ul,
+.product-view .box-tags .form-add,
+.product-view .product-shop .short-description,
+.product-view .box-description,
+.product-options .options-list li,
+.product-options,
+.product-options-bottom,
+.truncated,
+.truncated .truncated_full_value,
+.product-review,
+.cart,
+.cart-collaterals,
+.cart .crosssell li.item,
+.cart .discount,
+.cart .discount .discount-form,
+.cart .shipping .shipping-form,
+.opc .step-title,
+.opc .step,
+.multiple-checkout,
+.sp-methods,
+.checkout-progress,
+.multiple-checkout .place-order,
+.form-list li,
+.form-list .field,
+.form-list .input-box,
+.group-select li,
+.buttons-set,
+.page-print .print-head,
+.cart-tax-total,
+.advanced-search-summary,
+.advanced-search-summary p,
+.gift-messages-form .item,
+.send-friend .form-list li p,
+.centinel .authentication { zoom:1; }
+
+/* Hover Fix */
+iframe.hover-fix { position:absolute; /*left*/right:-1px; top:-1px; z-index:-1; background:transparent; filter:progid:DXImageTransform.Microsoft.Alpha(style=0,opacity=0); }
+
+
+/* RTL Edition =========================================================================== */
+.header .logo { width:173px; }
+/*.quick-access .welcome-msg { position:absolute; left:380px; }
+.quick-access .links { position:absolute; left:0; width:370px; direction:rtl !important; float:none !important; }*/
+/*.quick-access .links a { padding:0 7px 0 0; }*/
+/*.quick-access .links li { float:none; }*/
+.quick-access .links { padding:0 8px 0 0 !important; }
+.quick-access .links { display:inline !important; float:none !important; direction:rtl !important; }
+
+.header .nav-container #nav,
+.checkout-onepage-index .col-main,
+button.button,
+.product-view .product-shop .add-to-links { direction:ltr; }
+
+.header .nav-container #nav li,
+.mini-products-grid .product-image,
+.product-view .product-img-box .product-image,
+.checkout-onepage-index .col-main .page-title,
+.checkout-onepage-index .col-main .opc { direction:rtl; }
+
+.bundle-option-title { float:none !important; }
+
+input.qty,
+.form-list input.validate-email,
+.form-alt input.validate-email,
+.form-list textarea.validate-emails,
+.form-list input.validate-password,
+.form-list input.validate-cpassword,
+.form-list input#login-password,
+.form-list input#current_password,
+.form-list input#telephone,
+.form-list input[id="billing:telephone"],
+.form-list input[id="shipping:telephone"],
+.form-list input#fax,
+.form-list input[id="billing:fax"],
+.form-list input[id="shipping:fax"],
+.form-list input[id="billing:year"],
+.form-list input[id="billing:month"],
+.form-list input[id="billing:day"],
+.form-list input#year,
+.form-list input#month,
+.form-list input#day,
+.form-list input[id="billing:taxvat"],
+.form-list input#taxvat,
+.form-list input#zip,
+.form-alt input#oar_zip,
+.form-list input.validate-zip-international,
+.form-list input#sku,
+.form-list input.validate-number,
+.form-list input.validate-postcode,
+.form-alt input#oar_order_id,
+.cart .discount input#coupon_code,
+form input#ccsave_cc_owner,
+form select.validate-cc-type-select option,
+form input.validate-cc-type,
+form select#ccsave_expiration_yr option,
+form select#authorizenet_expiration_yr option,
+form input#po_number,
+form input.validate-cc-cvn { direction:ltr; text-align:left; }
+
+.checkout-onepage-index .col-main .opc { width:686px; }
+.multiple-checkout h2.legend { width:876px; }
+.quick-access { position:relative; }
+.multiple-checkout .place-order .grand-total big { float:none; margin:0 12px 0 0; display:inline; }
+.multiple-checkout .place-order .grand-total div { float:none; display:inline; }
+.opc .allow .step-title { width:668px !important; margin-right:0 !important; }
+.opc #checkout-step-review { margin-right:0 !important; }
+.block-cart .summary { width:202px; }
+/*.form-list li.wide textarea { width:529px !important; }*/
+.gift-messages-form .item .details .form-list li.wide textarea { width:489px !important; }
+/*.opc ol.checkout-agreements li { direction:ltr !important; }
+.opc ol.checkout-agreements li * { direction:rtl !important; }
+.opc ol.checkout-agreements li p.agree { width:618px; }*/
+.multiple-checkout .gift-messages-form .item .details .form-list li.wide textarea { width:439px !important; }
+.checkout-multishipping-shipping .box-sp-methods { width:246px; }
+
+.col-main .widget-product-link,
+.sidebar .widget-product-link,
+.col-main .widget-category-link,
+.sidebar .widget-category-link,
+.col-main .widget-cms-link,
+.sidebar .widget-cms-link { direction:ltr !important; }
+.widget-products .products-grid > li { position:relative; }
+.widget-products .products-grid .actions { right:0; }
+.product-view .box-tags .product-tags li,
+.footer li,
+.quick-access .links,
+.quick-access .links li,
+.quick-access .links li a { zoom:1 !important; display:inline !important; }
+.product-view .box-tags .product-tags li a { float:none !important; margin-left:0 !important; }
+.product-options dd.product-date-time-option { /*width:634px;*/ display:inline-block; }
+.product-options-bottom .add-to-cart { width:180px }
+.product-view .product-shop .add-to-links li { float:left; }
+.sp-methods input.cvv { float:left !important; }
+.opc .step .tool-tip { top:-99999px; }
+.opc .checkout-agreements { width:624px; }
+.buttons-set .back-link { width:250px; text-align:right; }
+.page-sitemap .links { width:890px; direction:ltr; }
+/*.cart .shipping .form-list li { position:relative; }
+.cart .shipping .form-list li label { right:0px; }*/
+.product-options-bottom .add-to-links li { width:97px; }
+.product-shop .product-options-bottom .add-to-links li { width:auto; }
+.page-popup .link-print { /*float:left;*/ display:inline-block; }
+.multiple-checkout .col2-set h2.legend { margin-right:-20px !important; margin-left:-20px !important; }
+.remember-me-popup { margin-left:0; margin-right:200px; }
+.remember-me-popup .remember-me-popup-body a:hover { text-decoration:none; cursor:pointer; }
+.tool-tip .btn-close { text-align:left; }
+.form-search { margin-left:-1px; }
+/* ======================================================================================= */

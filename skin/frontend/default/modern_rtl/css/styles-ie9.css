@@ -1,0 +1,31 @@
+/**
+ * CODNITIVE
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE_EULA.html.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.codnitive.com/en/terms-of-service-softwares/
+ * http://www.codnitive.com/fa/terms-of-service-softwares/
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade to newer
+ * versions in the future.
+ *
+ * @category   Codnitive
+ * @package    Codnitive_Modernrtl
+ * @author     Hassan Barza <support@codnitive.com>
+ * @copyright  Copyright (c) 2012 CODNITIVE Co. (http://www.codnitive.com)
+ * @license    http://www.codnitive.com/en/terms-of-service-softwares/ End User License Agreement (EULA 1.0)
+ */
+
+/* IE 9 Only ============================================================================= */
+/*.product-essential .add-to-box button.button,*/
+.product-options-bottom .add-to-cart button.button { margin-right:5px; }
+.product-options-bottom .add-to-cart button.button { float:none; }
+.product-shop .product-options-bottom .add-to-cart button.button { float:right; }
+.sorter .sort-by { padding-left:38px; }
+.form-search .search-autocomplete { top:133px !important; left:542px !important; }
+/* ======================================================================================= */

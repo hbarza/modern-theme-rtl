@@ -1,0 +1,64 @@
+/**
+ * CODNITIVE
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE_EULA.html.
+ * It is also available through the world-wide-web at this URL:
+ * http://www.codnitive.com/en/terms-of-service-softwares/
+ * http://www.codnitive.com/fa/terms-of-service-softwares/
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade to newer
+ * versions in the future.
+ *
+ * @category   Codnitive
+ * @package    Codnitive_Modernrtl
+ * @author     Hassan Barza <support@codnitive.com>
+ * @copyright  Copyright (c) 2012 CODNITIVE Co. (http://www.codnitive.com)
+ * @license    http://www.codnitive.com/en/terms-of-service-softwares/ End User License Agreement (EULA 1.0)
+ */
+
+/* All IEs =============================================================================== */
+input.input-text { height:15px; }
+.quick-access .links { display:block; float:left; direction:ltr; }
+
+button.button,
+.nav-container,
+.top-bar,
+.main,
+.sidebar .block,
+.product-image,
+.opc #checkout-step-review,
+ul.messages > li { direction:ltr; }
+
+.breadcrumbs,
+.form-search,
+.col-main,
+.sidebar,
+.sidebar .block .block-title,
+.sidebar .block .block-content,
+.opc .order-review,
+.quick-access .links li,
+ul.messages > li > ul { direction:rtl; }
+
+.form-search { width:320px; }
+.opc .allow .step-title { width:667px; margin-right:1px; }
+.opc #checkout-step-review { width:684px; margin-right:1px; }
+/*.form-list li.wide textarea { width:528px; }*/
+.gift-message-link { float:right; }
+
+.sidebar .widget-product-link,
+.sidebar .widget-category-link,
+.sidebar .widget-cms-link { margin:0 10px 15px !important; padding:0 !important; }
+
+.product-essential .add-to-box input.qty { margin-left:0; }
+.product-essential .add-to-box button.button { margin-right:5px; }
+.multiple-checkout .col2-set h2.legend { margin-right:-19px; margin-left:-21px; }
+.window-overlay { background-color:#000000; filter:alpha(opacity=35); }
+.quick-access .links li,
+.quick-access .links li a { display:inline; }
+.form-search .search-autocomplete { top:133px !important; left:540px !important; }
+/* ======================================================================================= */
